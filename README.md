@@ -25,16 +25,19 @@ La idea principal es tener un programa sencillo para manejar información de gas
 ## Instalación
 
 1. Ejecutar el instalador con sudo:
-   ```sudo ./install.sh
+   ```bash
+   sudo ./install.sh
 2. Ahora el programa se puede ejecutar con:
-   ```gdc
+   ```bash
+   gdc
 
 ---
 
 ## Desinstalación
 
 1. Simplemente ejecuta con sudo el desinstalador:
-    ```sudo ./uninstall
+    ```bash
+    sudo ./uninstall
 
 ---
 
