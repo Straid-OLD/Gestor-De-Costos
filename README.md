@@ -1,11 +1,11 @@
-# 📊 Gestor de Costos
+# Gestor de Costos
 
 Este es un proyecto en **C++** que permite registrar, calcular y gestionar costos de productos.  
 La idea principal es tener un programa sencillo para manejar información de gastos y totales desde consola.
 
 ---
 
-## 🚀 Características
+## Características
 
 - Agregar productos con sus costos.
 - Guardar y cargar información desde archivos.
@@ -14,7 +14,7 @@ La idea principal es tener un programa sencillo para manejar información de gas
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - Lenguaje: **C++**
 - Librerías estándar de C++ (`iostream`, `fstream`, etc.)
@@ -22,18 +22,22 @@ La idea principal es tener un programa sencillo para manejar información de gas
 
 ---
 
-## 📥 Instalación
+## Instalación
 
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/Straid-OLD/Gestor-De-Costos.git
-   cd Gestor-De-Costos
-2. Compilar el proyecto:
-   ```bash
-   g++ -o Gestor g++ CostosAndroid.cpp
-3. Darle permisos y ejecutar
-   ```bash
-   chmod 777 Gestor
-   ./Gestor
+1. Ejecutar el instalador con sudo:
+   ```sudo ./install.sh
+2. Ahora el programa se puede ejecutar con:
+   ```gdc
 
-Los datos del programa se guardan en "save.txt" y se sobrescriben cada que se cierra el programa.
+---
+
+## Desinstalación
+
+1. Simplemente ejecuta con sudo el desinstalador:
+    ```sudo ./uninstall
+
+---
+
+## Sistema de Guardado
+
+Los datos del programa se guardan en `~/.config/Gestor_De_Productos/save.txt`
