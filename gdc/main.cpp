@@ -266,6 +266,27 @@ void AgregarProducto(Producto P1[50], int &nProd) {
 		}
 }
 
+void EliminarProducto(Producto P1[50], int &nProd) {
+		int EliProd = 0;
+
+		if ( nProd == 0 ) {
+				cout << "No hay productos para eliminar" << endl;
+				return;
+		} else { 
+
+				cout << "Que producto desea eliminar?: ";
+				cin >> EliProd;
+				int indice = EliProd - 1;
+				int Iteraciones = nProd - EliProd;
+
+				for ( int i = 0; i < Iteraciones; i++ ) {
+						indice += i;
+						P1[indice] = P1[indice + 1];
+				}
+				nProd--;
+		}
+}
+
 void Menu(Producto P1[], int &nProd) {
     int opcion;
     do {
@@ -277,7 +298,9 @@ void Menu(Producto P1[], int &nProd) {
             P1[i].getnombre();
             cout << endl;
         }
+		cout << "-----------------------------------" << endl;
 		cout << nProd + 1 << ". Agregar un producto." << endl;
+		cout << nProd + 2 << ". Eliminar un producto." << endl;
         cout << "Selecciona el producto que desea verificar o coloca 0 para salir: ";
         cin >> opcion;
         int index = opcion - 1;
@@ -312,7 +335,9 @@ void Menu(Producto P1[], int &nProd) {
 		} else if ( opcion == nProd + 1) {
 				AgregarProducto(P1, nProd);
 				sleep(1);
-            
+		} else if ( opcion == nProd + 2) {
+				EliminarProducto(P1, nProd);
+				sleep(1);
         } else if (opcion == 0) {
             cout << "Saliendo del programa" << endl;
         
